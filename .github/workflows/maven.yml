@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Install Playwright Browsers
-      run: mvn playwright:install
+      run: mvn exec:java -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install"
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
