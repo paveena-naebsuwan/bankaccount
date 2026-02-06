@@ -8,7 +8,7 @@ import org.springframework.boot.test.web.server.LocalServerPort;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class EnTwoEnTest {
+public class EndTwoEndTest {
 
     @LocalServerPort
     private int port;
